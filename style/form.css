@@ -14,6 +14,7 @@ body {
 .container {
     max-width: 1300px;
     margin: 50px 10px;
+    height: fit-content;
     /* height: 80vh; */
     background-color: white;
     display: flex;
@@ -23,7 +24,6 @@ body {
 
 .main {
     width: 100%;
-    
 }
 
 .main-content::-webkit-scrollbar {
@@ -35,6 +35,7 @@ body {
     height: 590px;
     overflow-y: auto;
 }
+
 
 .main-content-header {
     display: flex;
@@ -110,7 +111,7 @@ body {
     margin-right: 3px;
     margin-left: 3px;
     height: 2.5px;
-    background-color: #b1b9c4;
+    background-color: #b1b9    box-shadow: 0px 4px  #EAEAEA;c4;
 } */
 
 .user-input {
@@ -227,6 +228,48 @@ input::-webkit-inner-spin-button {
     width: 80px;
 }
 
+.footer button {
+    background-color: white;
+    padding: 8px 16px;
+    color: #3A86FF;
+    font-weight: 600;
+    font-size: 13px;
+    border: 2px solid #3A86FF;
+    border-radius: 4px;
+    transition: all 0.15s ease;
+    margin-right: 10px;
+}
+
+.footer button:nth-child(2)
+{
+    background-color: #3A86FF;
+    color: white;
+    cursor: pointer;
+}
+
+.footer button:hover {
+    background-color: #3A86FF;
+    color: white;
+    cursor: pointer;
+}
+
+.footer button:active {
+    opacity: 0.8;
+}
+
+.footer {
+    float: right;
+    margin-right: 70px;
+    margin-bottom: 15px;
+}
+
+.border-effect {
+    width: 100%;
+    height: 5px;
+    background-color: #eaeaea;    
+    position: relative;
+    bottom: 20px;
+}
 
 
 @media (max-width:730px) {
@@ -236,10 +279,11 @@ input::-webkit-inner-spin-button {
 
     .container {
         border-radius: 10px;
+        
     }
 
     .icon-border:not(:last-child) i::after {
-        width: 12.9vw;
+        width: 12.5vw;
         margin: 0 0.62vw;
     }
 
@@ -254,5 +298,14 @@ input::-webkit-inner-spin-button {
 
     input[type=email] {
         min-width: 200px;
+    }
+
+    .main-content-header p {
+        font-size: 20px;
+    }
+
+    .main-content-header button {
+        white-space: nowrap;
+        padding: 4px 8px;
     }
 }

@@ -1,6 +1,5 @@
 .side-bar {
     width: 30vw;
-    height: 100%;
     border-right: 3px solid #166FFF;
 }
 
@@ -86,7 +85,7 @@
 }
 
 .side-bar .query {
-    margin: 198px 15px 30px 15px;
+    margin: 258px 15px 30px 15px;
     background-color: 3A86FF;
 
 }
@@ -128,4 +127,8 @@
         margin: 10px auto;
     }
 
+}
+
+@media (max-width:730px) { 
+    
 }
