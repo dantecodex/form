@@ -23,10 +23,17 @@ body {
 
 .main {
     width: 100%;
+    
 }
+
+.main-content::-webkit-scrollbar {
+    display: none;
+  }
 
 .main-content {
     margin: 20px 45px;
+    height: 590px;
+    overflow-y: auto;
 }
 
 .main-content-header {
@@ -108,9 +115,11 @@ body {
 
 .user-input {
     margin-top: 25px;
-    border-top: 2px solid #3A86FF;
+    border-top: 2.2px solid #3A86FF;
     padding: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 .user-input-header {
@@ -201,6 +210,22 @@ input::-webkit-inner-spin-button {
     text-align: center;
 }
 
+
+/* .pers-info-form input[type=text],
+.pers-info-form input[type=number] {
+    min-width: 200px;
+} */
+
+.second {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.second input {
+    width: 80px;
+}
 
 
 
