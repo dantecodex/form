@@ -279,10 +279,11 @@ input::-webkit-inner-spin-button {
 
     .container {
         border-radius: 10px;
+        
     }
 
     .icon-border:not(:last-child) i::after {
-        width: 12.9vw;
+        width: 12.5vw;
         margin: 0 0.62vw;
     }
 
@@ -297,5 +298,14 @@ input::-webkit-inner-spin-button {
 
     input[type=email] {
         min-width: 200px;
+    }
+
+    .main-content-header p {
+        font-size: 20px;
+    }
+
+    .main-content-header button {
+        white-space: nowrap;
+        padding: 4px 8px;
     }
 }
