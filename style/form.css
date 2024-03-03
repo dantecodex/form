@@ -58,6 +58,12 @@ body {
     transition: all 0.15s ease;
 }
 
+
+.main-content-header >div {
+    display: flex;
+    column-gap: 10px;
+}
+
 .main-content-header button:hover {
     background-color: #3A86FF;
     color: white;
@@ -273,9 +279,6 @@ input::-webkit-inner-spin-button {
 
 
 @media (max-width:730px) {
-    .side-bar {
-        display: none;
-    }
 
     .container {
         border-radius: 10px;
@@ -308,4 +311,14 @@ input::-webkit-inner-spin-button {
         white-space: nowrap;
         padding: 4px 8px;
     }
+}
+
+@media (max-width: 650px) {
+    .side-bar {
+        width: 45% !important;
+    }
+    .side-bar-content .search-section {
+        font-size: 15px !important;
+    }
+    
 }

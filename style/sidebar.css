@@ -1,6 +1,7 @@
 .side-bar {
     width: 30vw;
     border-right: 3px solid #166FFF;
+    display: none;
 }
 
 .search-section-header {
@@ -9,8 +10,15 @@
     align-items: center;
 }
 
-.search-section-header>.bi {
+.search-section-header .bi {
     font-size: 28px;
+}
+
+.search-section-header button {
+    background: transparent;
+    cursor: pointer;
+    padding: 2px;
+    border: none;
 }
 
 .side-bar-content .search-section {
