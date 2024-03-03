@@ -24,6 +24,7 @@ body {
 .main {
     width: 100%;
 }
+
 .main-content {
     margin: 20px 45px;
 }
@@ -54,20 +55,22 @@ body {
     color: white;
     cursor: pointer;
 }
+
 .main-content-header button:active {
     opacity: 0.8;
 }
 
 .header-progress {
-    margin-top: 20px;
+    margin-top: 20px !important;
     display: flex;
     justify-content: center;
+    column-gap: 6.55vw;
+    align-items: baseline;
 }
 
 .icon-border {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
+    position: relative;
 }
 
 
@@ -75,19 +78,127 @@ body {
     color: #3A86FF;
     font-size: 25px;
 }
-.header-progress div:first-child  i {
+
+.icon-border:not(:last-child) i::after {
+    content: "";
+    position: absolute;
+    border-top: 3px solid #b1b9c4;
+    width: 10.25vw;
+    margin: 0 0.52vw;
+    top: 12px;
+    display: inline-block;
+    transform: translateY(50%);
+}
+
+.icon-border:nth-child(2) i::after {
+    transform: translateY(5px) !important;
+}
+
+.header-progress div:first-child i {
     font-size: 27px;
 }
 
-
-.border {
+/* .border {
     width: 9.6vw;
     margin-right: 3px;
     margin-left: 3px;
     height: 2.5px;
     background-color: #b1b9c4;
-    
+} */
 
+.user-input {
+    margin-top: 25px;
+    border-top: 2px solid #3A86FF;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.user-input-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+sup {
+    color: red;
+}
+
+.pers-info-form {
+    display: flex;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+/* .pers-info-form > div:not(:first-child){
+    margin-left: 20px;
+} */
+
+form label {
+    font-weight: 600;
+}
+
+form input {
+    margin-top: 5px;
+    outline: none;
+    padding: 8px 16px;
+    outline: none;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+form input:focus {
+    border: 2px solid #3A86FF;
+}
+
+.pers-info-form input[type=text],
+.pers-info-form input[type=number] {
+    min-width: 200px;
+}
+
+.rest-info-form>div {
+    margin-top: 15px;
+
+}
+
+.rest-info-form>div:first-child>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.rest-info-form input[type=email] {
+    flex: 1;
+    margin-right: 46px;
+}
+
+.rest-info-form>div:first-child>div p {
+    background-color: #F1FBFF;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+    margin-right: 20px;
+}
+
+.rest-info-form .dob input {
+    width: 25px;
+    padding: 8px 12px;
+}
+
+/* to remove scroll from number
+input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.rest-info-form .dob input::placeholder {
+    text-align: center;
 }
 
 
@@ -97,7 +208,26 @@ body {
     .side-bar {
         display: none;
     }
+
     .container {
         border-radius: 10px;
+    }
+
+    .icon-border:not(:last-child) i::after {
+        width: 12.9vw;
+        margin: 0 0.62vw;
+    }
+
+    .header-progress {
+        font-size: 12px;
+    }
+
+    .rest-info-form>div:first-child>div p {
+        font-size: 9.5px;
+        font-weight: bold;
+    }
+
+    input[type=email] {
+        min-width: 200px;
     }
 }

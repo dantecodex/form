@@ -100,24 +100,64 @@
                 <div class="header-progress">
                     <div class="icon-border">
                         <i class="fa-regular fa-circle"></i>
-                        <div class="border"></div>  
+                        <p style="font-weight: 600;">Personal information</p>
                     </div>
                     <div class="icon-border">
                         <i class="bi bi-exclamation-circle" style="color: red;"></i>
-                        <div class="border"></div>
-                        
+                        <p>About</p>
+
                     </div>
                     <div class="icon-border">
                         <i class="fa-regular fa-circle-check" style="color: #98CA52;"></i>
-                        <div class="border"></div>
-                        
+                        <p>Phone Verification</p>
+
                     </div>
                     <div class="icon-border">
                         <i class="fa-regular fa-circle-check" style="color: #98CA52;"></i>
-                        
+                        <p>Studies</p>
                     </div>
                 </div>
-                
+                <div class="user-input">
+                    <div class="user-input-header">
+                        <p>Personal information</p>
+                        <i class="fa-solid fa-chevron-up" style="color: #3A86FF;"></i>
+                    </div>
+                    <form action="#">
+                        <div class="pers-info-form">
+                            <div>
+                                <label for="fname">Name <sup>*</sup></label><br>
+                                <input type="text" id="fname" placeholder="Name"><br>
+                            </div>
+                            <div>
+                                <label for="lname">Surname <sup>*</sup></label><br>
+                                <input type="text" id="lname" placeholder="Surname"><br>
+                            </div>
+                            <div>
+                                <label for="id">ID/Passport number <sup>*</sup></label><br>
+                                <input type="number" min="0" id="id" placeholder="ID/Passport number">
+                            </div>
+                        </div>
+                        <div class="rest-info-form">
+                            <div>
+                                <label for="email">Email <sup>*</sup></label><br>
+                                <div>
+                                    <input type="email" id="email" placeholder="Email">
+                                    <div>
+                                        <p><i class="bi bi-exclamation-circle"
+                                                style="color: #3A86FF; font-size: 16px;"></i> Your email will be
+                                            used for app's login.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dob">
+                                <label for="dob">Birth Date <sup>*</sup></label><br>
+                                <input type="number" id="dob" placeholder="DD" min="0" max="31">
+                                <input type="number" id="dob" placeholder="MM" min="0" max="12">
+                                <input type="number" id="dob" placeholder="YY" min="0" max="2024">
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
